@@ -1,0 +1,69 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 2px;
+    width: fit-content;
+    background-color: #3a2e1f;
+    border: none;
+    box-shadow: none;
+    filter: none;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: #3a2e1f;
+    border-radius: 8px;
+    box-shadow: none;
+    transition: background-color 0.25s ease;
+}
+
+.cell.snake {
+    background-color: #7a8a4e;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #6e7d42a8,
+        inset 0 0 8px #5f6e20;
+}
+
+.cell.apple {
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    user-select: none;
+    color: #a75e2a;
+    text-shadow: 0 0 3px #7a4017a8;
+    cursor: default;
+    animation: pulseSubtle 2s infinite ease-in-out;
+    position: relative;
+}
+
+.cell.apple::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #a75e2a99;
+    animation: pulseSubtle 2s infinite ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes pulseSubtle {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.45;
+    }
+}
