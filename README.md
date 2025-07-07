@@ -12,8 +12,7 @@ A simple weather forecast app using the OpenWeatherMap API. Users can enter a ci
 
 ## 🚀 Live Demo
 
-[Try it online](https://your-weather-app.netlify.app)  
-(Replace with your actual link)
+[Try it online](https://chris-wav.github.io/weather-app/)
 
 ## 📸 Screenshot
 
