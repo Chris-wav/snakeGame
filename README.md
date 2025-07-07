@@ -14,10 +14,6 @@ A simple weather forecast app using the OpenWeatherMap API. Users can enter a ci
 
 [Try it online](https://chris-wav.github.io/weather-app/)
 
-## 📸 Screenshot
-
-Add `screenshot.png` in the repo to show preview.
-
 ## 🛠️ How to Run Locally
 
 ```bash
